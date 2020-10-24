@@ -40,7 +40,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: vladruss/flask-app
           tag_with_ref: true 
-  
+
+          
   deploy:
     runs-on: ubuntu-latest
     needs: push_to_docker_hub
